@@ -1,0 +1,89 @@
+ <html>
+
+<head>
+    <b><big><right>Week9: Arduino Introduction and DIY sensors.</right></big></b>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+</style> 
+     
+     </head>
+        
+     <ul id= "navigation">
+                
+                <li class="nav"><a class="static" href="index.html" style="letter-spacing: 1px">Fab4Care</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+                        <div class="dropdown-content">
+                            <a href="week2.html">Week2</a>
+                            <a href="week3.html">Week3</a>
+                            <a href="week4.html">Week4</a>
+                            <a href="week6.html">Week6</a>
+                            <a href="week7.html">Week7</a>
+                            <a href="week8.html">Week8</a>
+                            <a href="week9.html">Week9</a>
+                            <a href="week10.html">Week10</a>
+                            <a href="week11.html">Week11</a>
+                            <a href="FinalProject.html">FinalProject</a>
+                        </div>
+                </li>            
+            </ul> 
+        
+    
+         <div class="row">
+  <div class="column">
+      
+      
+      <center>
+      
+                <p style="line-height:1.5">
+                  During this week, we were introduced to Arduino. A program software and hardware that lets you program that lets you write some code and put it into a special type of plates, that will later put in function your programmed code. In the picture down below, you can see an Arduino plate.
+                                
+                </p>
+        <p></p>
+                <img src="arduino\A1.png" width="430" height = "400">
+         
+        <p></p>
+         
+            <h2><font color="#a19a59"><big> Learning to use Arduino. </big></font></h2> 
+
+            <p style="line-height:1.5">
+                  
+                The first thing that we needed to do was to download a program named <i>Arduino</i>. This program lets you write the code you will later put into the Arduino plate. Once we were inside the program, we clicked on <b>files, examples and then blink</b>.
+              
+            </p>
+        <p></p>
+          
+            <p style="line-height:1.5"> 
+                  
+                Once we were there, we wanted to change the <b>pinMode</b> by writing <i>pinMode(13, OUTPUT); where before was pinMode(LED_BUILTIN, OUTPUT);</i>and then click on verify. By doing those changes, now we were able to make the LED blink when we connected the Arduino to the current.
+
+            </p>
+        <p></p>
+            <p style="line-height:1.5"> 
+                  
+                The circuitry settings were pretty basic, we just needed to connect the positive leg of the LED (anode) to pin 13 and the negative one (cathode) to the GND (ground). Down below there is a picture of the basic circuitry settings.
+
+            </p>
+        <p></p>
+            <img src="arduino\A2.png" width="380" height = "450">
+         
+        <p></p>
+            <p style="line-height:1.5"> 
+                  
+                  Afterwards, we wanted the LED to blink every minute. In order to do that we had to create a loop by writing <b>void Loop</b>and use the delay option, so we changed both of the <b>digitalWrite</b> lines passing from <b>digitalWrite(LED_BUILTIN, HIGH/LOW); to digitalWrite(13 HIGH/LOW);</b>. What we wanted to achieve with all those changes was that connecting the LED to the pin13, we could be able to turn on the LED when we connected it. We didn´t had to change anything of the circuitry, but in this case the LED blinked with more frequency.
+      
+
+            </p>
+        <p></p>
+              
+            <p style="line-height:1.5"> 
+                  
+                      In order to create a more realistic scenario, we wanted to connect the LED to the Arduino through wires. In order to do that we went to <i>board, port and there we chose COM3 Arduino_Genuino Uno</i>. Then, in order to save the changes, we pressed the button upload. Here the circuitry was slightly different because we had to connect the LED and the wire to a <b>breadboard</b>. Then we had to connect one wire that went out of the 5V output to the positive and one connected to the GND to the negative.
+      
+            </p>
+        <p></p>
+            
+  
+      </center>

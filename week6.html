@@ -1,0 +1,189 @@
+ <html>
+
+<head>
+    <b><big><right>Week6: From 3D to 2D (workflow working with Exactflat). </right></big></b>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+</style> 
+     
+     </head>
+        
+    <body>
+            <ul id= "navigation">
+                
+                <li class="nav"><a class="static" href="index.html" style="letter-spacing: 1px">Fab4Care</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+                        <div class="dropdown-content">
+                            <a href="week2.html">Week2</a>
+                            <a href="week3.html">Week3</a>
+                            <a href="week4.html">Week4</a>
+                            <a href="week6.html">Week6</a>
+                            <a href="week7.html">Week7</a>
+                            <a href="week8.html">Week8</a>
+                            <a href="week9.html">Week9</a>
+                            <a href="week10.html">Week10</a>
+                            <a href="week11.html">Week11</a>
+                            <a href="FinalProject.html">FinalProject</a>
+                        </div>
+                </li>            
+            </ul>
+        
+        
+    
+         <div class="row">
+  <div class="column">
+      
+     <center>
+                <p style="line-height:1.5">
+                   The aim of this week was to be able to create a splint or a corset, depending on which part of the body we had scanned, in order to be able to transform it into a 2D figure that could be cut by the laser cutter. 
+                
+                </p>
+            <p></p>
+         
+         <h2><font color="#a19a59"><big> Creating a splint for our scanned body.  </big></font></h2>
+
+              <p style="line-height:1.5">
+                  
+                  In order to create the splint, I needed to work again with Autodesk Fusion 360.
+                  
+                </p>
+            <p></p>
+                
+                <font size = 5, color="#a19a59"><b> STEP 1: Importing and scalating the scanned arm: </b></font>
+            <p></p>
+         
+                <p style="line-height:1.5">
+                  
+                    Since I wanted to create a splint for the arm that I had worked with the past week, I had to import it. Before doing that, I had to measure the length from my forearm to my middle finger, since when importing it, it was probably going to be small. I created a rectangle with a <i> height of 410 cm </i> and a random width.                  
+                </p>
+         
+            <p></p>
+         
+            <p style="line-height:1.5">
+                  
+                    Once I had created the rectangle that I was going to use as a lead, I proceeded to import the arm. In order to do that I went to insert, and then selected <b> insert Mesh </b>. The next step was to escalate the body since it had been imported in a really small size. For doing that I had to go to modify and there choose the tool <i> scale </i>, choosing a scaling parameter of 450. Once I was able to see the figure properly (picture 1) I moved it and did a second scaling in order to have it in the size I wanted (picture 2).
+                     
+                </p>
+         
+            <p></p>
+                    
+                <img src="2D\2D1.png" width="550" height = "400">
+                <img src="2D\2D2.png" width="550" height = "400">
+         
+            <p></p>
+                    
+         
+                <font size = 5, color="#a19a59"><b> STEP 2: Working in the sculpt mode: </b></font>
+            <p></p>
+         
+                <p style="line-height:1.5">
+                  
+                    Once I finally had the arm in the dimensions I wanted to work with, I had to start the process of making what was going to be the splint. In order to do that I had to go to create and select <i> create form </i>, changing from <b> the model mode to the sculp mode </b>.
+                 
+                </p>
+         
+            <p></p>
+         
+            <p style="line-height:1.5" >
+                  
+                   When I had finally entered in the sculp mode, I went to the bottom part of the figure and I chose <i> cylinder </i> from the create library. I had to make the diameter and the height of the cylinder big enough to cover all the parts of the arm I was interested in working with. Additionally, in order to be able to adjust the cylinder better I chose 10 faces.
+                       
+                </p>
+         
+            <p></p>
+                <img src="2D\2D3.png" width="550" height = "400">
+         
+            <p></p>
+         
+                <p style="line-height:1.5">
+                  
+                    The next thing I wanted to do was to adjust the cylinder to the arm. For doing that I went to the <i> edit form  </i> function inside modify. Once I had chosen it, I started selecting the different faces from the cylinder and drag them near to the main arm.
+                                      
+                </p>
+         
+         <p></p>
+                <img src="2D\2D4.png" width="550" height = "400">
+         
+            <p></p>
+         
+                <p style="line-height:1.5">
+                  
+                   The last step I had to do in the sculpt mode was to adjust the cylinder even more to the arm. Since it is something that manually would just take an insane amount of time, there is a tool that does it for you. I went to the modify library and there I chose <i> pool </i>. Once in pool I had to say that I wanted to select the targets. I selected the arm as the target and then I selected the different points from the cylinder. Finally, I clicked ok and the cylinder had already taken the arm shape.
+                </p>
+         
+                <p style="line-height:1.5">
+                  
+                   Then, I cliked finish form in order to went back to the modify mode.
+                                                         
+                </p>
+         
+         
+            <p></p>
+                <img src="2D\2D5.png" width="550" height = "400">
+            <p></p>
+         
+          <font size = 5, color="#a19a59"><b> STEP 3: Making the last changes: </b></font>
+            <p></p>
+         
+                <p style="line-height:1.5">
+                  
+                    Now that I was back in modify mode, I wanted to make some changes and get rid of the parts that I didn´t want. I went to the sketch mode and with the <i> spline mode </i> I created a custom line in order to cut the left and right edge of the figure. Once I had done that, I used the <i> split body function </i> in order to remove the edges. After that I repeated the same process, but this time I created a transversal line to the figure in order to separate it into two different splines. Now finally I had my two different desired bodies.                                                         
+                                 
+                </p>
+         
+            <p></p>
+                    <img src="2D\2D6.png" width="550" height = "400">
+            <p></p>
+         
+                   <font size = 5, color="#a19a59"><b> STEP 4: Uploading the pieces to Exactflat: </b></font>
+            <p></p>
+         
+                <p style="line-height:1.5">
+                  
+                    The last step before actually making the figures ‘cutable’ for the laser was to upload them to Exactflat. In order to do that I selected the <i> create pieces function </i> inside the Exactflat library ad created both of my pieces.
+                    
+                </p>
+         
+            <p></p>
+         
+          <h2><font color="#a19a59"><big> Working with Exactflat.  </big></font></h2>
+
+                <p style="line-height:1.5">
+                  
+                    In order to create a form that the laser machine could cut, I had to work with Exacflat and transform my 3D body into a 2D body. I chose to work with the upper part of the arm.
+                  
+                </p>
+            <p></p>
+
+          
+                <p style="line-height:1.5">
+                  
+                Once in Exacflat, I selected the upper part of the arm and clicked <i>flatten</i>A new working scenario oppener and there I had several different options. The first thing I did was to click on <i>pre-flatten</i>. When the new workspace oppened I started selecting the different lines until the figure was mainly blue and white.             
+                               
+                </p>
+            <p></p>
+                 <p style="line-height:1.5">
+                  
+                    After that, I clicked on <i>optimization</i>, selected the figure and then pressed nylon.
+                     
+                </p>
+            <p></p>
+         
+                 <img src="2D\2D7.png" width="1350" height = "600">
+            <p></p>
+         
+                <p style="line-height:1.5">
+                  
+                    Finally, I clicked finish and saved the body downloading it as a DXF.
+                     
+                </p>
+            <p></p>
+         
+                 <img src="2D\2D8.png" width="650" height = "550">
+            <p></p>
+         
+         
+      </center>
