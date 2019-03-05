@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <b><big><right>Week10: Working with Eagle and creating our own circuits.</right></big></b>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+</style> 
+     
+     </head>
+        
+     <ul id= "navigation">
+                
+                <li class="nav"><a class="static" href="index.html" style="letter-spacing: 1px">Fab4Care</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+                        <div class="dropdown-content">
+                            <a href="week2.html">Week2</a>
+                            <a href="week3.html">Week3</a>
+                            <a href="week4.html">Week4</a>
+                            <a href="week6.html">Week6</a>
+                            <a href="week7.html">Week7</a>
+                            <a href="week8.html">Week8</a>
+                            <a href="week9.html">Week9</a>
+                            <a href="week10.html">Week10</a>
+                            <a href="week11.html">Week11</a>
+                            <a href="week12.html">Week12</a>
+                            <a href="final.html">First glances of final project</a>
+                            <a href="finalProject.html">Final project</a>
+                        </div>
+                </li>            
+            </ul> 
+        
+    
+         <div class="row">
+  <div class="column">
+      
+      
+      <center>
+      
+                <p style="line-height:1.5">
+                  During this week, we were introduced to the program Eagle. The aim of using this program was for learning how to create our own DIY integrated circuits.
+                                
+                </p>
+         
+        <p></p>
+         
+            <h2><font color="#a19a59"><big> Designing our circuit. </big></font></h2>
+        <p></p>
+
+            <font size = 5, color="#a19a59"><b> Getting started with Eagle: </b></font>
+        <p></p>
+
+            <p style="line-height:1.5">
+                  
+                The first thing that we needed to do was to download a program named <i>Eagle</i>. With this program lets you dessign different circuit patterns that later can be printed. Once we were inside the program, we clicked on <b>dessign</b>.
+              
+            </p>
+        <p></p>
+          
+            <p style="line-height:1.5"> 
+                  
+                Once we were there, we opened the we opened the library manager and then we cliekced browese. Then, we had to import ; <i> fab, FAB_HELLO, LilyPad-Wreables, Sparkfun </i> and update them all. In order to be able to work with them we have to go to the left panel and click on the add symbol.
+
+            </p>
+        <p></p>
+          
+            <p style="line-height:1.5"> 
+                  
+                Now we want to start adding different basic circuit components.The first thing we will add are the resistors. We have to go to FAB_Hello and click on the one which has <b>1206</b> in the description.
+                Afterward we are going to to inside the LilyPad_Wereables and we are going to click on <b> SEWTAP </b> and select the option <i> Petal-Small </i>. In order to join the different components that we are using we will use the option <b> net </b>; and in order to rotate the components we will use the right button of the mouse.
+                
+
+            </p>
+     
+        <p></p>
+            
+          <img src="eagle/1.PNG">
+         
+        <p></p>
+      
+          <p style="line-height:1.5"> 
+                  
+                 The next step will be going to schematic: There is where we will generate our board. We click on the move key and try to move all the different components to the centre. Then, we rotate them and make them be as close as they can be, since the main objective is to save some space. Afterward we will have to click on the <i> dimension feauture </i>, which is a sign shaped as a two points arrow. In my case, my board measures <b> 15.25 mm </b>.
+                
+  
+            </p>
+        <p></p>
+          
+            <p style="line-height:1.5"> 
+                  
+                The last two steps of the design with Eagle are doing the routing and setting the layer settings. For doing the <i> routing </i> we select the route and change the width to <b> 40 </b> and set the drill to <b> 0,35 </b>. 
+                Then we go to <i> layer settings </i> and we hide the layers, select top and pads and accept. We save our file as an image
+                
+            </p>
+        <p></p>
+        
+          <img src="eagle/2.PNG">
+         
+        <p></p>
+      
+        <font size = 5, color="#a19a59"><b> Editing with Gimp: </b></font>
+        <p></p>
+
+            <p style="line-height:1.5">
+                  
+                <b>Gimp</b> is a tool used to edit photographs, in a similar way to photoshop, however, Gimp is an open software tool. In order to modify the circuit we have to open the image we saved and do two different jobs: 
+              
+            </p>
+        <p></p>
+                
+            <p style="line-height:1.5">
+                  
+                The first thing we need to do is <i> preparing the image </i>. In order to do that we select the part of the image we are interested in without leaving any margin. Then with the tool <i> image </i> we crop the selection we just made. Since the margins of my image were not even, I had to <i> resize it </i> by changing the milimeters in the canvas size. Then, we choose file <i> overwrite </i>, close the image without saving it and then we open the image again. The last steps of the resizing are to put everything in black by making a reactangle selection and clicking on <i>contrl + "," </i>. We crop the image and export the file.
+            </p>
+        <p></p>
+          <img src="eagle/3.PNG" width="400" height = "600">
+         <br>
+        <p></p>
+          
+            <p style="line-height:1.5">          
+                For compliting the first step we need to check the actual size of the image.Since we want to control that Gimp has not done any scaling, we go again to tools, selection tools, rectangle and switch from ppx to mm. Then we select the rectangle and see that the size is <b>2,0mm</b>, that is close to the original size which was <b>2,4mm</b>. No rescaling has been done.
+ 
+            </p>
+        <p></p>
+          
+            <p style="line-height:1.5">          
+                Now we should work on the second step, which consicts on creating a white part and using it for the machine to cut more in that part. What we do is select <i>rounded rectangle</i> and switch the value to <b>30</b>, then we click on on <i>contrl + "+" </i>, in order for the background to be white. Finally we just export our image.
+            </p>
+        <p></p>
+      
+            <img src="eagle/5.PNG" width="400" height = "600">
+         
+        <p></p>
+          
+          
+            <h2><font color="#a19a59"><big> Cutting the circuit. </big></font></h2>
+        <p></p>
+
+            <p style="line-height:1.5"> 
+                 After putting the different correct values in the website <b>fabmodules</b> with an USB we inserted the different content in  CNC milling machine, which will cut a copper plate.  
+            </p>
+        <p></p>
+          
+            <img src="eagle/6.PNG" width="400" height = "400">
+            <img src="eagle/7.jpg" width="400" height = "400">
+         
+        <p></p>
+            
+  
+      </center>
